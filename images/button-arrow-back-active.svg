@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+  <g fill="none" fill-rule="evenodd">
+    <rect width="48" height="48" rx="4"/>
+    <polygon fill="#000" fill-opacity=".38" points="20 18.615 21.615 17 28.615 24 21.615 31 20 29.385 25.385 24" transform="matrix(-1 0 0 1 48.615 0)"/>
+  </g>
+</svg>

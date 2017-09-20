@@ -1,0 +1,16 @@
+// building blocks for tables
+.form1Line {
+  display: flex;
+  justify-content: space-between;
+  transition: all 300ms ease-in-out;
+}
+.form1RightBlock {
+  display: flex;
+  margin-left: 24px;
+  justify-content: space-between;
+}
+.rowButtonLeft {
+  display: flex;
+  justify-content: flex-start;
+  max-width: 460px;
+}

@@ -1,0 +1,139 @@
+header {
+	padding: 16px;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background: rgba($background-primary,.95);
+	z-index: 1;
+	}
+.headerContent{
+	display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 40px;
+  margin: 0 auto;
+  width: 1200px;
+}
+.logo {
+	display: flex;
+  justify-content: flex-start;
+}
+.logoIcon {
+	margin-right: 16px;
+}
+.tabsHeader {
+	div {
+	  display: inline-block;
+	  padding: 17px 0 10px;
+	  margin-right: 8px;
+		&:hover {
+		  cursor: pointer;
+		  transition: all 300ms ease-in-out;
+		  background-color: rgba(33, 150, 243, .12);
+		}
+	}
+	li {
+		line-height: 1;
+	}
+	a {
+	  text-transform: uppercase;
+	  font-size: 14px;
+		line-height: 1;
+	  margin: 0 8px;
+	  text-align: center;
+	  text-decoration: none;
+	}
+}
+.tabText-inactive {
+  color: $gray-dark;
+	&:hover {
+		font-weight: 500;
+		transition: all 300ms ease-in-out;
+	}
+}
+.tabText-active {
+  color: #000;
+  font-weight: 600;
+}
+#tabActive {
+  border-bottom: 3px solid $link;
+	&:hover {
+		border-bottom: 3px solid darken($link, 10%);
+	}
+}
+.signInBox {
+  display: grid;
+  border-margin-radius: 4px;
+  grid-template-columns: repeat(4, 1fr) 48px;
+  position: relative;
+}
+.signInButton {
+	height: 48px;
+  width: 48px;
+  border-radius: 24px;
+  background-color: $button;
+	&:hover {
+		cursor: pointer;
+		background-color: darken($button, 15%);
+	}
+}
+.signInLetter {
+	color: #fff;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 48px;
+  text-align: center;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+	-webkit-padding-start: 0;
+}
+.scrollBorder {
+	box-shadow: 0 7px 11px rgba(0, 0, 0, .1);
+}
+.dropdownAccountInfo {
+ background-color: #2E578C;
+ margin-bottom: 16px;
+}
+.signedInAs {
+  padding: 16px 0 0 16px;
+  font-size: 12px;
+  margin-bottom: 4px;
+  color: rgba(255,255,255,.7);
+}
+.signInName{
+  padding: 0 0 16px 16px;
+  color: #fff;
+  margin: 0;
+}
+.signIn-1 {
+  grid-column: 5;
+}
+.signIn-2 {
+  grid-column: 2/span 4;
+  grid-row: 2;
+}
+
+
+
+
+.buffer {
+  height: 48px;
+  width: 48px;
+  margin: 0;
+  padding: 0;
+}
+// second row - for interior pages
+.row2 {
+	padding-top: 40px;
+	left: 0;
+	transition: all 300ms ease-in-out;
+}
+.row2Content {
+	margin-left: 88px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: baseline;
+  h2 {
+    display: inline-block;
+  	margin-right: 40px;
+  }
+}

@@ -1,0 +1,135 @@
+.dashboardSection {
+	margin: 198px auto 0;
+}
+
+.reportsContainer {
+	background-color: #F0F0F0;
+  padding-top: 40px;
+}
+.reportColumn {
+	min-width: 260px;
+}
+// ul property
+.headerTabs {
+	-webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+	-webkit-padding-start: 0;
+	li {
+	  list-style: none;
+		display: inline-block;
+	}
+}
+
+// top orange background header
+.reportSelectHeader {
+	background: rgba($secondary, 0.76);
+	padding: 8px;
+	display: block;
+}
+.orangeHeaderTab {
+	width: 48px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	opacity: .65;
+	margin: 0 16px;
+}
+.orangeTabActive {
+	opacity: 1;
+}
+.iconDescriptor {
+	color: #ffffff;
+	font-weight: 500;
+	font-size: 11px;
+	text-align: center;
+	line-height: 1.1;
+	-webkit-margin-before: 8px;
+	-webkit-margin-after: 0;
+	letter-spacing: .8px;
+}
+
+// gray background subheader
+.subreportHeader {
+	background: $background-grayDark;
+	padding: 8px;
+}
+// this class keeps all tabs hidden initially except the default value
+.subPanel-1 {
+	display: none;
+	a {
+		display: flex;
+		align-items: center;
+		padding: 8px;
+	}
+}
+.subPanel-1-active {
+	display: block;
+}
+
+// subreport row 1 styles
+.subreportTabBox {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	opacity: .65;
+	padding: 8px;
+	margin: 8px 0;
+	text-align: center;
+	text-transform: uppercase;
+	color: #fff;
+	line-height: 1.2;
+}
+.subreportTabBoxRow1 {
+	font-size: 16px;
+	font-weight: 500;
+	-webkit-margin-before: 0;
+	-webkit-margin-after: 0;
+	letter-spacing: 1px;
+}
+.subreportTabBoxRow2 {
+	font-size: 10px;
+	font-weight: 300;
+	-webkit-margin-before: 8px;
+	-webkit-margin-after: 0;
+	letter-spacing: .8px;
+	max-width: 108px;
+}
+.tabBoxActive {
+	opacity: 1;
+	border: 1px solid #fff;
+}
+
+// subreport row 2 styles
+.subPanel-2 {
+	display: none;
+	a {
+		display: flex;
+		align-items: center;
+		padding: 8px;
+	}
+}
+.subPanel-2-active {
+	display: block;
+}
+.subreport2Tab {
+	font-size: 12px;
+	text-align: left;
+	color: #fff;
+	text-transform: uppercase;
+	opacity: .65;
+	display: inline-block;
+	padding: 8px;
+}
+.subreport2Tab-active {
+	opacity: 1;
+	font-weight: 500;
+}
+.subreport2TabExplanatory {
+	font-size: 10px;
+	text-align: left;
+	color: #fff;
+	text-transform: uppercase;
+	opacity: .65;
+	display: inline-block;
+	padding: 8px;
+}

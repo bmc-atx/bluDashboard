@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+  <g fill="none" fill-rule="evenodd">
+    <rect width="48" height="48" rx="4"/>
+    <g fill="#8E8E93" fill-rule="nonzero" transform="rotate(90 12 24)">
+      <polygon points="24 22.215 1.859 0 0 1.785 22.141 24"/>
+      <polygon points="1.859 24 24 1.785 22.141 0 0 22.215"/>
+    </g>
+  </g>
+</svg>

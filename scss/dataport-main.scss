@@ -1,0 +1,66 @@
+
+$base-text: #000000;
+$body-text: rgba($base-text,.87);
+$gray-dark: rgba($base-text,.54);
+$gray-light: rgba($base-text,.38);
+$border: rgba($base-text,.38);
+$link: #2196F3;
+$button: #2196F3;
+$primary: #2E578C;
+$secondary: #00BF83;
+$background-primary: #fafafa;
+$background-grayDark: #8E8E93;
+$background-grayLight: #EEEEEE;
+
+
+@import "baseStyles";
+@import "opacities";
+@import 'typography';
+@import 'button';
+@import "gridStyles";
+@import 'sidebar';
+@import "header";
+@import "dropdown";
+@import "tablesAndForms";
+@import "reports";
+@import "sectionElements";
+@import 'footer';
+@import "sandboxStyles";
+
+
+
+
+
+
+
+
+/* ----------------------------------------
+Decorations
+------------------------------------------- */
+hr {
+  border: none;
+  border-bottom: solid 2px rgba(0,0,0,.38);
+	padding: 0;
+	margin: 8px 0;
+}
+
+
+/* ----------------------------------------
+Images
+------------------------------------------- */
+img {
+	max-width: 100%;
+}
+div.iconButton img {
+	width: 100%;
+}
+
+
+
+
+div.col-2-3 h1 {
+	margin: 0;
+}
+div.col-2-3 p {
+	margin: 16px 0 0;
+}
