@@ -2,6 +2,7 @@
 $base-text: #000000;
 $body-text: rgba($base-text,.87);
 $gray-dark: rgba($base-text,.54);
+$gray-darkSolid: #c8c8c8;
 $gray-light: rgba($base-text,.38);
 $border: rgba($base-text,.38);
 $link: #2196F3;
@@ -26,6 +27,7 @@ $background-grayLight: #EEEEEE;
 @import "sectionElements";
 @import 'footer';
 @import "sandboxStyles";
+@import "signInForm";
 
 
 

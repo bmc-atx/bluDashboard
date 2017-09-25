@@ -560,6 +560,87 @@ footer {
   height: 80px;
   width: 100%; }
 
+.signIn-h1 {
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 1.618;
+  text-align: center; }
+
+.bluText {
+  color: #2E578C;
+  font-weight: 500;
+  font-size: 24px;
+  letter-spacing: .6px; }
+
+.dashboardText {
+  color: #2196F3;
+  font-weight: 500;
+  font-size: 24px;
+  letter-spacing: .6px; }
+
+.mainGrid {
+  margin: 40px 24px 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 24px; }
+
+.signInDiv {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap: 16px;
+  justify-items: center; }
+
+.spacer-24px {
+  height: 24px; }
+
+form {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap: 16px;
+  justify-items: center;
+  width: 100%;
+  max-width: 360px;
+  grid-auto-rows: minmax(24px, auto); }
+
+input {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 20px 2px 2px;
+  font-size: 16px;
+  box-shadow: none;
+  border: none;
+  border-bottom: 1px solid #c8c8c8;
+  background: none;
+  transition: all .3s ease-in-out; }
+  input:focus {
+    outline: none;
+    border-bottom: 3px solid #2196F3; }
+
+.buttonActivated {
+  display: block;
+  width: 100%;
+  max-width: 360px;
+  height: 48px;
+  border-radius: 4px;
+  font-size: 18px;
+  background: #2196F3;
+  color: #fff;
+  letter-spacing: 1px; }
+
+.textOnly {
+  width: 100%;
+  max-width: 360px;
+  height: 48px;
+  border-radius: 4px;
+  background: transparent;
+  cursor: pointer;
+  color: #2196F3;
+  font-size: 16px; }
+
+.textOnly:hover {
+  text-decoration: underline; }
+
 /* ----------------------------------------
 Decorations
 ------------------------------------------- */
