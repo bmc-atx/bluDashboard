@@ -2,7 +2,7 @@
 $('.dropdownContainer').hide();
 $('.dropdownContainer-grid').hide();
 
-// sticky scroll
+// // sticky scroll
 $(window).on('scroll', function () {
   var distanceScrolled = $(window).scrollTop();
   console.log('The distance scrolled is: ' + distanceScrolled);
@@ -13,8 +13,7 @@ $(window).on('scroll', function () {
   }
 });
 
-
-// dropdown container
+// // dropdown container
 $('.selectBox').on('click', function() {
   $('.dropdownContainer').slideToggle(300);
   $('.arrowTouchZone').toggleClass('turnArrow');
@@ -44,14 +43,14 @@ $('main').on('click', function() {
   $('.dropdownContainer-grid').slideUp(300);
 });
 
-// refresh button
+// // refresh button
 var refreshAngle =0;
 $('#refreshButton').on('click', function() {
   refreshAngle += 360;
   $('.refreshTouchZone').css({'transform': 'rotate(' + refreshAngle + 'deg)'});
 });
 
-// checkbox
+// // checkbox
 $('.img-swap').on('click', function(){
   if ($(this).attr("class") == "img-swap") {
     this.src = this.src.replace("_off","_on");
@@ -90,3 +89,59 @@ $('#liveReport2-1-1 a').on('click', function () {
   $('#liveReport2-2-1 a').removeClass('tabBoxActive');
   $('#liveReport2-2-1 .subPanel-1-active li:first a.subreportTabBox').addClass('tabBoxActive');
 });
+
+// sign-in form commands
+$('#emailFormError').hide();
+$('#passwordFormError').hide();
+
+
+// When the user submits the form
+$('form').on('submit', function (e) {
+
+	// Prevent the page from refreshing
+	e.preventDefault();
+
+  var emailBlock = $('#userEmail').val();
+  var passwordBlock = $('#userPassword').val();
+	if (emailBlock.length === 0) {
+    $('#userEmail').removeClass('signInForm');
+    $('#userEmail').addClass('error');
+    $('#emailFormError').fadeIn();
+	} else {
+    $('#userEmail').addClass('signInForm');
+		$('#userEmail').removeClass('error');
+    $('#emailFormError').hide();
+	}
+	if (passwordBlock.length === 0) {
+    $('#userEmail').removeClass('signInForm');
+		$('#userPassword').addClass('error');
+    $('#passwordFormError').fadeIn();
+	} else {
+    $('#userEmail').addClass('signInForm');
+		$('#userPassword').removeClass('error');
+    $('#passwordFormError').hide();
+	}
+})
+
+$('#userEmail').on('click', function() {
+  $('#userEmail').removeClass('error');
+  $('#userEmail').addClass('signInForm');
+})
+$('#userPassword').on('click', function() {
+  $('#userPassword').removeClass('error');
+  $('#userPassword').addClass('signInForm');
+})
+
+$('#userEmail').on('keyup', function() {
+  var emailBlock = $('#userEmail').val();
+  if (emailBlock.length > 0) {
+    $('#emailFormError').hide();
+  }
+});
+$('#userPassword').on('keyup', function() {
+  var passwordBlock = $('#userPassword').val();
+  if (passwordBlock.length > 0) {
+    $('#passwordFormError').hide();
+  }
+});
+// end of sign-in form commands

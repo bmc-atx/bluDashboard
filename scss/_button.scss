@@ -1,3 +1,26 @@
+button {
+  padding: 0;
+  border: none;
+  border-width: 0;
+  border-style: none;
+  border-color: none;
+  display: block;
+  max-width: 360px;
+  height: 48px;
+  border-radius: 4px;
+  font-size: 18px;
+  font-weight: 500;
+  background: $button;
+  color: #fff;
+  letter-spacing: 1px;
+  cursor: pointer;
+  &:focus {
+    outline:0;
+  }
+  &:hover {
+    background: darken($button, 20%);
+  }
+}
 .iconButtonContainer {
   padding: 0;
   border: none;
@@ -40,13 +63,4 @@
   width: 48px;
   border-radius: 4px;
   transition: all .6s linear;
-}
-button {
-  padding: 0;
-  border-width: 0;
-  border-style: none;
-  border-color: none;
-  &:focus {
-    outline:0;
-  }
 }

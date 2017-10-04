@@ -29,3 +29,12 @@ ul {
 li {
 	list-style: none;
 }
+img {
+	max-width: 100%;
+}
+hr {
+  border: none;
+  border-bottom: solid 2px $gray-light;
+	padding: 0;
+	margin: 8px 0;
+}
