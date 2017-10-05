@@ -25,11 +25,23 @@
   grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 40px;
 }
+.mainGridFlex {
+  display: flex;
+  flex-basis: 31%;
+}
 .signInDiv {
   display: grid;
   grid-template-columns: 1fr;
   grid-row-gap: 16px;
   justify-content: center;
+}
+.signInDivFlex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  input {
+    margin-bottom: 24px;
+  }
 }
 
 // div formatting
@@ -41,7 +53,7 @@
 .signInDiv form {
   display: grid;
   grid-template-columns: 1fr;
-  grid-row-gap: 16px;
+  grid-row-gap: 24px;
   justify-self: center;
   max-width: 360px;
   grid-auto-rows: minmax(24px, auto);
@@ -71,6 +83,11 @@ input {
 // button elements
 .signInDiv button {
   width: 100%;
+  justify-self: center;
+}
+.signInDivFlex button {
+  width: 100%;
+  margin-top: 32px;
 }
 .textOnly {
 	background: transparent;
@@ -116,7 +133,7 @@ input {
   min-width: 360px;
   border-radius: 4px;
 	border: 2px solid #F95758;
-  // background: rgba(255,59,48,.25);
+  transition: all .3s ease-in-out;
 }
 .errorMessage {
 	color: #FF3B30;
