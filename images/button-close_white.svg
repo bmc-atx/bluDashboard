@@ -1,6 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
   <g fill="none" fill-rule="evenodd">
     <rect width="48" height="48" rx="4"/>
-    <rect width="29" height="29" x="9.5" y="9.5" stroke="#8E8E93" rx="4"/>
+    <g fill="#FFF" transform="rotate(45 -3.314 35.314)">
+      <rect width="16" height="2" y="7"/>
+      <rect width="2" height="16" x="7"/>
+    </g>
   </g>
 </svg>

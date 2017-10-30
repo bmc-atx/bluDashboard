@@ -18,42 +18,66 @@
 </head>
 <body>
 	<!-- **************************
-	header for sign-in page - only logo appears
+	header
 	************************** -->
+
 	<header>
+		<!-- row 1 div -->
 		<div class="headerContent">
 			<div class="logo">
 				<img src="images/logo-bludashboard_icon.svg" alt="" class=logoIcon>
 				<img src="images/logo-bludashboard_text.svg" alt="">
 			</div>
-
-			<div></div>
-
-			<div></div>
+			<ul class="tabsHeader">
+				<div id="tabActive">
+					<li><a href="#" class="tabText-active">dashboard</a></li>
+				</div>
+				<div>
+					<li><a href ="#" class='tabText-inactive'>spotlight</a></li>
+				</div>
+			</ul>
+			<div class="signInBox">
+				<button type="button" name="button" title="Sign out and account info" class="signInButton signIn-1">
+					<p class="signInLetter">B</p>
+				</button>
+				<div class="dropdownContainer-grid signIn-2">
+					<div class="dropdownAccountInfo">
+						<p class="signedInAs">Signed in as</p>
+						<p class="signInName">bmccracken@pecanstreet.org</p>
+					</div>
+					<ul>
+						<li>User profile</li>
+						<li>Sign out</li>
+					</ul>
+				</div>
+			</div>
 		</div>
-
+		<!-- start row 2 div -->
+			<!-- legend -->
+			<!-- system use -->
+			<!-- residential label for list
+			ul - residential list items
+				li Residential use
+				li Use by Zip code
+				li Highest users
+				li Biggest increases
+				li Zero reads
+			end of ul
+			Commercial label
+			Commercial use
+		end of row 2 div -->
 	</header>
-	<main>
-		<section class='mainGrid'>
-  		<div></div>
-  		<div class='signInDivFlex'>
-    		<h1 class = 'signIn-h1'>Sign in to your <span class='bluText'>Blu</span><span class='dashboardText'>Dashboard</span> account</h1>
 
-	  		<form>
+	<!-- **************************
+	main
+	************************** -->
 
-		  		<input type="text" id="userEmail" placeholder="Email address" class="signInForm">
-      		<p id="emailFormError" class='errorMessage'>Please enter the email address for your BluDashboard account</p>
-      		<input type="password" id="userPassword" placeholder="Password" class="signInForm">
-      		<p id="passwordFormError" class='errorMessage'>Please enter your password</p>
-      		<div></div>
-      		<button type="submit">Submit</button>
-	  		</form>
-				<div class='spacer-24px'></div>
-   			<button type="button" class='textOnly' id='forgotPassword'>Forgot your email address or password?</button>
-    	</div>
-		  <div></div>
-  	</section>
+	<main class="dashboard">
+		
+
+
 	</main>
+
 
 	<footer></footer>
 	<!-- **************************
