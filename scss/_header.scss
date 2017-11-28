@@ -1,17 +1,20 @@
 header {
-	padding: 16px;
 	position: fixed;
 	top: 0;
 	width: 100%;
-	background: rgba($background-primary,.95);
-	z-index: 1;
 	}
+.headerRow {
+	padding: 16px;
+	background: rgba($background-primary,.95);
+	z-index: 3;
+}
 .headerContent{
 	display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 40px;
   margin: 0 auto;
   width: 1200px;
+	z-index: 5;
 }
 .logo {
 	display: flex;
@@ -20,46 +23,25 @@ header {
 .logoIcon {
 	margin-right: 16px;
 }
-.tabsHeader {
-	div {
-	  display: inline-block;
-	  padding: 17px 0 10px;
-	  margin-right: 8px;
-		&:hover {
-		  cursor: pointer;
-		  transition: all 300ms ease-in-out;
-		  background-color: rgba(33, 150, 243, .12);
-		}
-	}
-	li {
-		line-height: 1;
-	}
-	a {
-	  text-transform: uppercase;
-	  font-size: 14px;
-		line-height: 1;
-	  margin: 0 8px;
-	  text-align: center;
-	  text-decoration: none;
-	}
-}
-.tabText-inactive {
-  color: $gray-dark;
-	&:hover {
-		font-weight: 500;
-		transition: all 300ms ease-in-out;
-	}
+
+// tab section
+.row1TabActive {
+  height: 48px;
+  padding: 0 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .tabText-active {
-  color: #000;
-  font-weight: 600;
+  text-align: center;
+  font-size: 13px;
+  color: #2196F3;
+  text-transform: uppercase;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
 }
-#tabActive {
-  border-bottom: 3px solid $link;
-	&:hover {
-		border-bottom: 3px solid darken($link, 10%);
-	}
-}
+
+// sign-in dropdown
 .signInBox {
   display: grid;
   border-margin-radius: 4px;
@@ -70,6 +52,7 @@ header {
 	height: 48px;
   width: 48px;
   border-radius: 24px;
+	border-width: 0;
   background-color: $button;
 	&:hover {
 		cursor: pointer;
@@ -123,17 +106,37 @@ header {
 }
 // second row - for interior pages
 .row2 {
-	padding-top: 40px;
-	left: 0;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	background-color: rgba(245,245,245,.95);
 	transition: all 300ms ease-in-out;
 }
-.row2Content {
-	margin-left: 88px;
-	display: flex;
-	justify-content: flex-start;
-	align-items: baseline;
-  h2 {
-    display: inline-block;
-  	margin-right: 40px;
-  }
+.row2Tab {
+  display: inline-block;
+  padding: 8px;
+  border: 1px solid $border;
+  font-size: 14px;
+  letter-spacing: .5px;
+  color: $gray-light;
+  margin: 8px 4px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.row2Tab p {
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+}
+.activeTab {
+  color: #fff;
+  font-weight: 400;
+  background-color: $button;
+  border: 1px solid $button;
+}
+.row2Header {
+  color: $primary;
+  font-weight: medium;
+  display: inline-block;
+  margin: 8px 0 8px 24px;
+  font-weight: 600;
+  font-size: 16px;
 }

@@ -145,3 +145,9 @@ $('#userPassword').on('keyup', function() {
   }
 });
 // end of sign-in form commands
+
+// dashboard
+$('#legendTab').on('click', function() {
+  $('#legendTab').toggleClass('activeTab');
+  $('#legend').fadeToggle(350);
+})

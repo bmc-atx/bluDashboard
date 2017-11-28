@@ -17,10 +17,6 @@ main {
 	margin: 0;
 	transition: all 0.35s ease-in-out;
 }
-main.dashboard {
-	background-color: #EEEEEE;
-	min-height: 120px;
-}
 ul {
 	-webkit-margin-before: 0;
   -webkit-margin-after: 0;
@@ -28,6 +24,18 @@ ul {
 }
 li {
 	list-style: none;
+}
+dt {
+  margin: 24px 8px 4px;
+  font-weight: 600;
+  font-size: 14px;
+}
+dd {
+  -webkit-margin-start: 0;
+  margin: 0 8px;
+  font-size: 14px;
+  line-height: 1.618;
+  color: rgba(0,0,0,.54);
 }
 img {
 	max-width: 100%;

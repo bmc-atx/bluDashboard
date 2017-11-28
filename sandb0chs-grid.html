@@ -23,49 +23,66 @@
 
 	<header>
 		<!-- row 1 div -->
-		<div class="headerContent">
-			<div class="logo">
-				<img src="images/logo-bludashboard_icon.svg" alt="" class=logoIcon>
-				<img src="images/logo-bludashboard_text.svg" alt="">
-			</div>
-			<ul class="tabsHeader">
-				<div id="tabActive">
-					<li><a href="#" class="tabText-active">dashboard</a></li>
+		<div class="headerRow">
+			<div class="headerContent">
+				<div class="logo">
+					<img src="images/logo-bludashboard_icon.svg" alt="" class=logoIcon>
+					<img src="images/logo-bludashboard_text.svg" alt="">
 				</div>
-				<div>
-					<li><a href ="#" class='tabText-inactive'>spotlight</a></li>
+
+				<div class='row1TabActive'>
+					<img src="images/icon-dashboard_on.svg" alt="dashboard icon">
+					<p class="tabText-active">dashboard</p>
 				</div>
-			</ul>
-			<div class="signInBox">
-				<button type="button" name="button" title="Sign out and account info" class="signInButton signIn-1">
-					<p class="signInLetter">B</p>
-				</button>
-				<div class="dropdownContainer-grid signIn-2">
-					<div class="dropdownAccountInfo">
-						<p class="signedInAs">Signed in as</p>
-						<p class="signInName">bmccracken@pecanstreet.org</p>
+
+				<div class="signInBox">
+					<button type="button" name="button" title="Sign out and account info" class="signInButton signIn-1">
+						<p class="signInLetter">B</p>
+					</button>
+					<div class="dropdownContainer-grid signIn-2">
+						<div class="dropdownAccountInfo">
+							<p class="signedInAs">Signed in as</p>
+							<p class="signInName">bmccracken@pecanstreet.org</p>
+						</div>
+						<ul>
+							<li>User profile</li>
+							<li>Sign out</li>
+						</ul>
 					</div>
-					<ul>
-						<li>User profile</li>
-						<li>Sign out</li>
-					</ul>
 				</div>
 			</div>
 		</div>
 		<!-- start row 2 div -->
-			<!-- legend -->
-			<!-- system use -->
-			<!-- residential label for list
-			ul - residential list items
-				li Residential use
-				li Use by Zip code
-				li Highest users
-				li Biggest increases
-				li Zero reads
-			end of ul
-			Commercial label
-			Commercial use
-		end of row 2 div -->
+		<div class="headerRow row2">
+			<div class="row2Tab activeTab" id='legendTab'>
+				<p>Legend</p>
+			</div>
+			<div class="row2Tab" id='systemUse'>
+				<p>System use</p>
+			</div>
+			<h3 class="row2Header">Residential</h3>
+			<div class="row2Tab activeTab" id='residentialUseTab'>
+				<p>Residential use</p>
+			</div>
+			<div class="row2Tab activeTab" id='zipUse'>
+				<p>Use by ZIP</p>
+			</div>
+			<div class="row2Tab activeTab" id='highUsers'>
+				<p>Highest users</p>
+			</div>
+			<div class="row2Tab activeTab" id='bigIncrease'>
+				<p>Biggest increases</p>
+			</div>
+			<div class="row2Tab" id='zeroReads'>
+				<p>Zero reads</p>
+			</div>
+			<h3 class="row2Header">Commercial</h3>
+			<div class="row2Tab" id='commercialUse'>
+				<p>Commercial use</p>
+			</div>
+		</div>
+
+
 	</header>
 
 	<!-- **************************
@@ -73,36 +90,37 @@
 	************************** -->
 
 	<main class="dashboardGrid">
-		<!-- grid 12 column
-			column span 2 - Legend
-				h2 header for Legend section
-				gray header box
-					ul of definition headers
-						li All Residential
-						li Non-program
-						li Program
-					end of ul
-				end of gray header box
-				dl definition list for Legend
-					dt All Residental
-					dd All Residential
-					dt Non-program
-					dd Non-program
-					dt Program
-					dd Program
-				end of dl
-			end of column span 2
-			column span 9 - Residential Use
-				heading row
-					h2 inline block Residential use
-					<p class="headingDescription">Average monthly gallons per account</p>
-				end of heading row
+		<div id='legend'>
+			<div class='reportHeader'>
+				<h2>Legend</h2>
+			</div>
+			<ul class='grayDiv'>
+				<li class='grayRow-white'>All Residential</li>
+				<li class='grayRow-white'>Non-program</li>
+				<li class='grayRow-white'>Program</li>
+			</ul>
+			<dl>
+				<dt>All Residential</dt>
+				<dd>All residential accounts within the selected area, including those with conservation program participation</dd>
+				<dt>Non-program</dt>
+				<dd>All residential accounts for addresses within no conservation program history (including no rain barrel history)</dd>
+				<dt>Program</dt>
+				<dd>All residential accounts for addresses that have participated in a conservation program. Does not include addresses with only rain barrel program history.</dd>
+			</dl>
+		</div>
+		<div id='residentialUse' class="mainReport">
+			<div class='col-9 reportHeader'>
+				<h2>Residential Use</h2>
+				<p>(average monthly gallons per account)</p>
+			</div>
+			<div class='box2'></div>
+			<div class='box3'></div>
+			<div class='box4'></div>
+			<div class='box5'></div>
+			<div class='box6'></div>
+			<div class='box7'></div>
+		</div>
 
-			column span 4 - use by zip code
-			column span 4 - highest users
-			column span 4 - biggest increases
-			column span 4 - zero reads
-		end of grid 12 column -->
 	</main>
 
 

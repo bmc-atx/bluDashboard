@@ -1,4 +1,7 @@
-button {
+button:focus {
+  outline:0;
+}
+.columnButton {
   padding: 0;
   border: none;
   border-width: 0;
@@ -14,9 +17,6 @@ button {
   color: #fff;
   letter-spacing: 1px;
   cursor: pointer;
-  &:focus {
-    outline:0;
-  }
   &:hover {
     background: darken($button, 20%);
   }
