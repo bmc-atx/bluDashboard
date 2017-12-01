@@ -108,9 +108,7 @@ input {
   cursor: pointer;
   &:hover {
     border: solid 1px $button;
-    &:hover {
     background: transparent;
-  }
   }
 }
 

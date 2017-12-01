@@ -94,11 +94,6 @@
 			<div class='reportHeader'>
 				<h2>Legend</h2>
 			</div>
-			<ul class='grayDiv'>
-				<li class='grayRow-white'>All Residential</li>
-				<li class='grayRow-white'>Non-program</li>
-				<li class='grayRow-white'>Program</li>
-			</ul>
 			<dl>
 				<dt>All Residential</dt>
 				<dd>All residential accounts within the selected area, including those with conservation program participation</dd>
@@ -108,19 +103,60 @@
 				<dd>All residential accounts for addresses that have participated in a conservation program. Does not include addresses with only rain barrel program history.</dd>
 			</dl>
 		</div>
-		<div id='residentialUse' class="mainReport">
-			<div class='col-9 reportHeader'>
+		<div class="mainReportContainer">
+			<div class='col-10 reportHeader'>
 				<h2>Residential Use</h2>
 				<p>(average monthly gallons per account)</p>
 			</div>
-			<div class='box2'></div>
-			<div class='box3'></div>
-			<div class='box4'></div>
+			<div id='residentialUse1' class="mainReport">
+			<div class='box2'>
+				<div class="tabRow">
+					<ul>
+						<li class="choiceRowTab1 choiceTabActive1">Mean</li>
+						<li class="choiceRowTab1">Median</li>
+				</ul>
+				</div>
+				<h3 class="menuHeader">Account Type</h3>
+				<ul class="listMenuGrid">
+					<li class="accountMenuRow1 activeAccountMenuRow1">All Residential</li>
+					<li class="accountMenuRow1">Non-program</li>
+					<li class="accountMenuRow1">Program</li>
+					<li class="accountMenuRow1">Affordability</li>
+				</ul>
+				<h3 class="menuHeader">Geography</h3>
+				<ul class="listMenuGrid">
+					<li class="locationMenuRow1 activeLocationMenuRow1">Entire System</li>
+					<li class="locationMenuRow1">Zip code...</li>
+					<li class="locationMenuRow1">Council District...</li>
+				</ul>
+			</div>
+			<div class="box2a"></div>
+			<div class='box3'>
+				<p class="chartTitle">All Residential Accounts in Entire System</p>
+				<div></div>
+				<div>
+					<ul class="tabRow">
+						<li class="resReportYear1 resReportYearSelected1">2017</li>
+						<li class="resReportYear1">2016</li>
+						<li class="resReportYear1">2015</li>
+				</ul>
+				</div>
+			</div>
+			<div class='box4'>
+				<div></div>
+				<p class="monthSectionTitleBlack">2017 monthly average</p>
+				<div>
+					<p class="monthValueBlack">11,214</p>
+					<p class="captionCenteredGray">gallons per account</p>
+				</div>
+
+
+			</div>
 			<div class='box5'></div>
 			<div class='box6'></div>
 			<div class='box7'></div>
 		</div>
-
+		</div>
 	</main>
 
 

@@ -82,8 +82,7 @@
 .subreportTabBoxRow1 {
 	font-size: 16px;
 	font-weight: 500;
-	-webkit-margin-before: 0;
-	-webkit-margin-after: 0;
+	@extend %defaultBrowserMargin;
 	letter-spacing: 1px;
 }
 .subreportTabBoxRow2 {
@@ -133,12 +132,61 @@
 	display: inline-block;
 	padding: 8px;
 }
-.averageRowTab {
-	display: inline-block;
-	color: $off-white;
-	border-radius: 4px;
-	background: none;
+.menuHeader {
+	padding: 16px 8px 0 8px;
+	color: $primary;
+	font-weight: 600;
+	letter-spacing: .5px;
+	font-size: 14px;
+	@extend %defaultBrowserMargin;
+}
+.choiceRowTab1 {
+	@extend %reportTabPrimary;
+	text-transform: uppercase;
+}
+.choiceTabActive1 {
+	@extend %activeTabPrimary;
+}
+.accountMenuRow1 {
+	@extend %menuRow;
+}
+.activeAccountMenuRow1 {
+	@extend %activeMenuRow;
+}
+.locationMenuRow1 {
+	@extend %menuRow;
+}
+.activeLocationMenuRow1 {
+	@extend %activeMenuRow;
+}
+.resReportYear1 {
+	@extend %reportTabPrimary;
+	margin: auto 4px;
+}
+.resReportYearSelected1 {
+	@extend %activeTabPrimary;
+}
+.chartTitle {
 	text-align: center;
-	padding: 8px;
-	cursor: pointer;
+	font-weight: 600;
+	@extend %defaultBrowserMargin;
+}
+.monthSectionTitleBlack {
+	font-size: 14px;
+	text-align: center;
+	@extend %defaultBrowserMargin;
+}
+.monthValueBlack {
+	font-size: 28px;
+	text-align: center;
+	@extend %defaultBrowserMargin;
+	margin-bottom: 4px;
+	line-height: 1;
+}
+.captionCenteredGray {
+	font-size: 13px;
+	color: $gray-dark;
+	text-align: center;
+	@extend %defaultBrowserMargin;
+	line-height: 1;
 }

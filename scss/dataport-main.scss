@@ -8,15 +8,64 @@ $off-white: rgba(255,255,255,0.5);
 $border: #C7C7CC;
 $link: #2196F3;
 $button: #2196F3;
+$button-opaque: rgba($button, .38);
 $primary: #2E578C;
 $secondary: #00BF83;
 $background-primary: #fafafa;
 $background-grayDark: #8E8E93;
 $background-grayLight: #EEEEEE;
 
-
-
-
+%reportTab {
+  display: inline-block;
+  border-radius: 4px;
+  background: none;
+	text-align: center;
+	padding: 4px 8px;
+	cursor: pointer;
+  font-size: 14px;
+}
+%reportTabPrimary {
+  @extend %reportTab;
+  color: $gray-light;
+  &:hover {
+    border: 1px solid $button;
+    color: $button;
+  }
+}
+%activeTabPrimary {
+  background: $button;
+  color: #fff;
+  font-weight: 500;
+  border: 1px solid $button;
+  &:hover {
+    color: #fff;
+    background: darken($button, 20%);
+    border: 1px solid darken($button, 20%);
+  }
+}
+%menuRow {
+  padding: 8px;
+  font-size: 14px;
+  color: $gray-dark;
+  &:hover {
+    background: $background-primary;
+    color: $button;
+    cursor: pointer;
+  }
+}
+%activeMenuRow {
+  color: #fff;
+  background-color: $button;
+  font-weight: 500;
+  &:hover {
+    background: darken($button, 20%);
+    color: #fff;
+  }
+}
+%defaultBrowserMargin {
+  -webkit-margin-before: 0;
+	-webkit-margin-after: 0;
+}
 
 @import "baseStyles";
 @import "opacities";
